@@ -1,0 +1,81 @@
+{
+  "name": "transcribe",
+  "label": "Transcribe Workflow",
+  "retire_limit": 3,
+  "generates_subjects": true,
+  "generates_subjects_for": null,
+  "generates_subjects_after": 1,
+  "generates_subjects_max": 10,
+  "generates_subjects_method": "collect-unique",
+  "first_task": "yp3_business_name",
+  "tasks": {
+
+    "yp3_business_name": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the business name.\n\nYour efforts will help us train a machine learning process to do the same task.",
+      "examples": ["Gabriel Sales Company", "WELLER LUMBER CO"],
+      "help": {
+        "file": "t4_business_name"
+      },
+      "generates_subject_type": "yp3_transcribed_business_name"
+    },
+
+    "yp3_business_address": {
+      "tool": "textTool",
+      "instruction": "Enter the business address.\n\nYour efforts will help us train a machine learning process to do the same task.",
+      "examples": ["621 E Fountain", "16 Post Office pl", "5439 Cermak rd"],
+      "generates_subject_type": "yp3_transcribed_business_address",
+      "help": {
+        "file": "t4_business_address"
+      }
+    },
+
+    "yp3_phone_number": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the phone number with exchange name.\n\nYour efforts will help us train a machine learning process to do the same task.",
+      "examples": ["CRA wfrd-4492", "MELrse 2-4195"],
+      "generates_subject_type": "yp3_transcribed_phone_number",
+      "help": {
+        "file": "t4_transcribed_phone_number"
+      }
+    },
+
+    "yp3_see_advertisement": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter any references to advertisements.\n\nYour efforts will help us train a machine learning process to do the same task.",
+      "examples": ["(see advertisement on next page)"],
+      "help": {
+        "file": "t4_transcribed_see_advertisement"
+      },
+      "generates_subject_type": "yp3_transcribed_see_advertisement",
+      "next_task": null
+    },
+
+    "yp3_other": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter any other information.\n\nYour efforts will help us train a machine learning process to do the same task.",
+      "examples": ["Uptown Store", "If no answer call", "Large & Small Animals"],
+      "help": {
+        "file": "t4_transcribed_other"
+      },
+      "generates_subject_type": "yp3_transcribed_other",
+      "next_task": null
+    },
+
+    "yp3_graphic": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Give a brief description of the graphic.\n\nThis will help make graphics more accessible to library users.",
+      "examples": ["a cross and a shield"],
+      "help": {
+        "file": "t4_described_graphic"
+      },
+      "generates_subject_type": "yp3_described_graphic",
+      "next_task": null
+    }
+  }
+}

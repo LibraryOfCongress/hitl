@@ -1,0 +1,19 @@
+# How to mark different types of content
+
+In the right panel, select the type of content you’d like to mark:  
+
+<div class="video-wrapper">
+  <video width="460" height="630" loop autoplay src="/images/mark_task2-1.mp4"></video>
+</div>
+
+Once you’ve selected the type of content you’re marking, find a block of content on the page that matches the type you selected. Click and drag your mark around the entire block, including any bounding lines (if present).      
+
+Once you’ve marked the area around the block, click the DONE box at the bottom right corner of your mark.    
+
+Made a mistake? Adjust the edges of the box by clicking and dragging the dot at the corners.    
+
+You can also remove your mark by clicking on it and selecting the red X button in the upper right corner of the mark. Once the box is cleared, you can try again.    
+
+<div class="video-wrapper">
+  <video width="460" height="340" loop autoplay src="/images/mark_task2.mp4"></video>
+</div>

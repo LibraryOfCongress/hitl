@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scribe Admin</title>
+  <%= stylesheet_link_tag    "admin/all", media: "all" %>
+  <%= javascript_pack_tag 'admin' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% if current_user && current_user.can_view_admin? %>
+  <%= render 'admin/partials/head.html.erb' %>
+<% end %>
+
+<div id="admin-content">
+  <%= yield %>
+</div>
+<div id="app"></div>
+
+</body>
+</html>

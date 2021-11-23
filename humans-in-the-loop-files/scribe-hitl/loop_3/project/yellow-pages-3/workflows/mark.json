@@ -1,0 +1,37 @@
+{
+  "name":"mark",
+  "label":"Mark Workflow",
+  "subject_fetch_limit":100,
+  "generates_subjects_after": 1,
+  "generates_subjects": true,
+  "generates_subjects_for": "transcribe",
+
+  "first_task":"yp3_mark_business_listing_entities",
+
+  "tasks": {
+   "yp3_mark_business_listing_entities": {
+      "tool": "pickOneMarkOne",
+      "instruction": "Mark all of the parts of a business listing: business name, address, phone number, ad references, graphics, and any other information.\n\nYour efforts will help us train a machine learning process to do the same task.",
+      "generates_subjects": true,
+      "help": {
+        "file": "t4_mark_business_listing_entities"
+      },
+      "tool_config" : {
+        "displays_transcribe_button": false,
+        "options": [
+          {"type": "rectangleTool", "label": "Business Name", "color": "red", "generates_subject_type": "yp3_business_name", "help": {"file": "m_business_name"}},
+          {"type": "rectangleTool", "label": "Business Address", "color": "blue", "generates_subject_type": "yp3_business_address", "help":  {"file": "m_business_address"}},
+          {"type": "rectangleTool", "label": "Phone Number", "color": "darkorange", "generates_subject_type": "yp3_phone_number", "help": {"file": "m_phone_number"}},
+          {"type": "rectangleTool", "label": "See Advertisement", "color": "yellow", "generates_subject_type": "yp3_see_advertisement", "help": {"file": "m_see_ad"}},
+          {"type": "rectangleTool", "label": "Other Information", "color": "green", "generates_subject_type": "yp3_other", "help": {"file": "m_other"}},
+          {"type": "rectangleTool", "label": "Graphic", "color": "purple", "generates_subject_type": "yp3_graphic", "help": {"file": "m_graphic"}}
+        ]
+      },
+      "completion_assessment_task": {
+        "tool_config": {
+          "displays_transcribe_button": false
+        }
+      }
+    }
+  }
+}

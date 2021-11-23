@@ -1,0 +1,67 @@
+{
+  "title": "YELLOW PAGES",
+  "short_title": "Yellow Pages 1",
+  "summary": "Let your fingers do the walking to help us turn the Yellow Pages into structured data.",
+  "background": "/images/background.jpg",
+  "admin_email": "shawn@weareavp.com",
+  "logo": "/images/logo.svg",
+  "favicon": "/images/favicon.ico",
+  "privacy_policy": "",
+  "terms_map": {
+    "group": "collection",
+    "subject set": "page",
+    "subject": "page",
+    "mark": "region"
+  },
+  "team_emails": [
+    "shawn@weareavp.com",
+    "kerri@weareavp.com",
+    "amy@weareavp.com"
+  ],
+  "team": [
+    {
+      "name": "",
+      "role": "",
+      "organization": ""
+    },
+
+    {
+      "name": "",
+      "role": "",
+      "organization": ""
+    }
+  ],
+  "organizations": [
+    {
+      "title": "Library of Congress Labs",
+      "description": "",
+      "url":"https://labs.loc.gov/",
+      "logo": "https://labs.loc.gov/static/images/logo-loc-alt.svg"
+    },
+    {
+      "title": "AVP",
+      "description": "",
+      "url": "https:weareavp.com",
+      "logo": "https://www.weareavp.com/wp-content/uploads/2017/07/Header-Logo.png"
+    }
+  ],
+
+  "analytics": {
+    "google_analytics_client_id": ""
+  },
+
+  "forum": {
+    "type": "",
+    "base_url": ""
+  },
+
+  "menus": {
+    "main": [
+      {"label": "Intro", "page": "intro"},
+      {"label": "Workflow 1", "page": "workflow"},
+      {"label": "How it Works", "page": "data"},
+      {"label": "About", "page": "about"}
+    ],
+    "footer": []
+  }
+}

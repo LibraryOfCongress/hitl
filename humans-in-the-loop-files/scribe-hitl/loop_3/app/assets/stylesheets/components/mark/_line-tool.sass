@@ -1,0 +1,42 @@
+.horizontal-line-tool
+
+  // BUTTON STYLES
+  .resize-button
+    cursor: grab
+    cursor: -webkit-grab
+    &:active
+      cursor: grabbing
+      cursor: -webkit-grabbing
+
+  .delete-button
+    cursor: pointer
+
+  .mark-button
+    cursor: pointer
+
+  // SHAPE STYLES
+  .tool-shape
+    cursor: grab
+    cursor: -webkit-grab
+
+    &:active
+      cursor: grabbing
+      cursor: -webkit-grabbing
+
+    &.interim
+      opacity: 0.35
+
+    // mark is committed and uneditable
+    &.committed
+      cursor: default
+      &:hover
+        stroke-opacity: 1
+        transition-delay: 0.5s // too distracting when immediate
+
+    // mark has not yet been committed
+    &.uncommitted
+      stroke: #fc5424
+
+.rectangle-tool .tool-shape.committed.transcribable:hover
+  fill: rgba(55,58,204,.4)
+  transition-delay: 0.0s

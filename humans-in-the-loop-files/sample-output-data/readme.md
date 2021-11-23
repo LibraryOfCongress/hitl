@@ -1,0 +1,2 @@
+# Sample output data
+Sample structured data in CSV and Excel format for all business listings generated (with the generate-structured-data.py script) from the machine learning and crowdsourcing pipelines. Multiple values are delimited within fields with the pipe ("|") character.

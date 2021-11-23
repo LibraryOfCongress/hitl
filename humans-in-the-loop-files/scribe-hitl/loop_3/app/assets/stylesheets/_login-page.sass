@@ -1,0 +1,20 @@
+.login-page
+  .error-message
+    color: red
+    display: block
+    font-weight: bold
+
+  label
+    display: block
+    font-weight: bold
+
+    input[type="email"],
+    input[type="text"],
+    input[type="password"]
+      @extend %text-input
+      display: block
+      width: 300px
+
+      &[readonly]
+        background: lightgray
+        color: darkgray

@@ -1,0 +1,36 @@
+<h1>All Subjects</h1>
+
+<table class="dashboard-table" id="subjects-table" width="100%">
+  <tr>
+    <th></th> 
+    <th>Status</th>
+    <th>Classifications</th>
+    <th>2nd Subjects</th>
+    <th>Retire Count</th>
+    <th>Bad Count</th>
+  </tr>
+
+<% @subjects.each do |subject| %>
+  <tr>
+    <td><%= link_to admin_subject_path(subject) do %><img src="<%= subject.thumbnail %>" width="100"/><% end %></td>
+    <td><%= link_to admin_subject_path(subject) do %><%= subject.status %><% end %></td>
+    <td> <%= subject.classification_count %> </td> 
+    <td> 
+      <%= subject.secondary_subject_count %>
+      <ul>
+      <% if ! subject.child_subjects.empty? %>
+        <% show_max = 5 %>
+        <% subject.child_subjects.limit(show_max).each do |child| %>
+          <li><%= link_to child, admin_subject_path(child) %></li>
+        <% end %>
+        <% if subject.child_subjects.count > show_max %>
+          <li><%= link_to 'More...', admin_subject_path(subject) %></li>
+        <% end %>
+      <% end %>
+      </ul>
+    <td> <%= subject.retire_count %> </td> 
+    <td> <%= subject.flagged_bad_count %> </td> 
+  </tr>
+<% end %>
+</table>
+

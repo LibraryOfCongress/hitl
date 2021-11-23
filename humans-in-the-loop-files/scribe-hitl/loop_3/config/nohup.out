@@ -1,0 +1,1637 @@
+Deprecation warning: Expected string default value for '--jbuilder'; got true (boolean).
+This will be rejected in the future unless you explicitly pass the options `check_default_type: false` or call `allow_incompatible_default_type!` in your code
+You can silence deprecations warning by setting the environment variable THOR_SILENCE_DEPRECATION.
+Deprecation warning: Expected string default value for '--serializer'; got true (boolean).
+This will be rejected in the future unless you explicitly pass the options `check_default_type: false` or call `allow_incompatible_default_type!` in your code
+You can silence deprecations warning by setting the environment variable THOR_SILENCE_DEPRECATION.
+=> Booting Puma
+=> Rails 4.2.11.3 application starting in development on http://0.0.0.0:3002
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Init: OAUTH providers: []
+D, [2021-03-22T16:51:48.452895 #10010] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyOpening topology=Unknown>
+D, [2021-03-22T16:51:48.452973 #10010] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2021-03-22T16:51:48.453073 #10010] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerOpening address=localhost:27023 topology=Unknown>
+D, [2021-03-22T16:51:48.453099 #10010] DEBUG -- : MONGODB | Server localhost:27023 initializing.
+D, [2021-03-22T16:51:48.456035 #10010] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Unknown new=Single>
+D, [2021-03-22T16:51:48.456118 #10010] DEBUG -- : MONGODB | Topology type 'unknown' changed to type 'single'.
+D, [2021-03-22T16:51:48.456183 #10010] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerDescriptionChanged>
+D, [2021-03-22T16:51:48.456247 #10010] DEBUG -- : MONGODB | Server description for localhost:27023 changed from 'unknown' to 'standalone'.
+D, [2021-03-22T16:51:48.456329 #10010] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Single new=Single>
+D, [2021-03-22T16:51:48.456366 #10010] DEBUG -- : MONGODB | There was a change in the members of the 'single' topology.
+D, [2021-03-22T16:51:48.458456 #10010] DEBUG -- : MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+D, [2021-03-22T16:51:48.460246 #10010] DEBUG -- : MONGODB | localhost:27023 | admin.saslStart | STARTED | {}
+D, [2021-03-22T16:51:48.462407 #10010] DEBUG -- : MONGODB | localhost:27023 | admin.saslStart | SUCCEEDED | 0.002s
+D, [2021-03-22T16:51:48.469373 #10010] DEBUG -- : MONGODB | localhost:27023 | admin.saslContinue | STARTED | {}
+D, [2021-03-22T16:51:48.470026 #10010] DEBUG -- : MONGODB | localhost:27023 | admin.saslContinue | SUCCEEDED | 0.001s
+D, [2021-03-22T16:51:48.470253 #10010] DEBUG -- : MONGODB | localhost:27023 | admin.saslContinue | STARTED | {}
+D, [2021-03-22T16:51:48.471888 #10010] DEBUG -- : MONGODB | localhost:27023 | admin.saslContinue | SUCCEEDED | 0.002s
+D, [2021-03-22T16:51:48.474421 #10010] DEBUG -- : MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.015s
+D, [2021-03-22T16:51:48.475861 #10010] DEBUG -- : MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+D, [2021-03-22T16:51:48.477836 #10010] DEBUG -- : MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Routing static assets from ./project/yellow-pages-3/assets
+Puma starting in single mode...
+* Version 3.12.6 (ruby 2.2.10-p489), codename: Llamas in Pajamas
+* Min threads: 0, max threads: 16
+* Environment: development
+* Listening on tcp://0.0.0.0:3002
+Use Ctrl-C to stop
+
+
+Started GET "/" for 63.162.127.71 at 2021-03-22 16:52:04 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+Completed 200 OK in 297ms (Views: 282.4ms)
+
+
+Started GET "//projects" for 63.162.127.71 at 2021-03-22 16:52:06 +0000
+Processing by ProjectsController#index as JSON
+  Parameters: {"project"=>{}}
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"final_data_exports", "filter"=>{}, "sort"=>{"updated_at"=>-1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"classifications", "query"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.003s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"workflows", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "sort"=>{"order"=>1}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.003s
+Overwriting existing field help in class WorkflowTask.
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82c'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+Completed 200 OK in 154ms (Views: 136.6ms)
+
+
+Started GET "//current_user" for 63.162.127.71 at 2021-03-22 16:52:06 +0000
+Processing by UsersController#logged_in_user as */*
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Completed 200 OK in 18ms (Views: 2.4ms)
+
+
+Started GET "//groups?project_id=6058c7e81d41c82455c9f829" for 63.162.127.71 at 2021-03-22 16:52:06 +0000
+Processing by GroupsController#index as JSON
+  Parameters: {"project_id"=>"6058c7e81d41c82455c9f829", "group"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"groups", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "limit"=>25, "skip"=>0, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f833'), "meta_data.hide"=>{"$ne"=>"1"}}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46920...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f833'), "meta_data.hide"=>{"$ne"=>"1"}, "status"=>"active"}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=><...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f833'), "meta_data.hide"=>{"$ne"=>"1"}, "status"=>"inactive"}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.update | STARTED | {"update"=>"groups", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('6058c7e81d41c82455c9f833')}, "u"=>{"$set"=>{"calculated_stats_at"=>2021-03-22 16:52:0...
+MONGODB | localhost:27023 | loop_dev.update | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f860'), "meta_data.hide"=>{"$ne"=>"1"}}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46920...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f860'), "meta_data.hide"=>{"$ne"=>"1"}, "status"=>"active"}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=><...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f860'), "meta_data.hide"=>{"$ne"=>"1"}, "status"=>"inactive"}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.update | STARTED | {"update"=>"groups", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('6058c7e81d41c82455c9f860')}, "u"=>{"$set"=>{"calculated_stats_at"=>2021-03-22 16:52:0...
+MONGODB | localhost:27023 | loop_dev.update | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+Completed 200 OK in 135ms (Views: 117.4ms)
+
+
+Started GET "/" for 72.46.12.80 at 2021-03-22 16:52:24 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+Completed 200 OK in 26ms (Views: 24.8ms)
+
+
+Started GET "//projects" for 72.46.12.80 at 2021-03-22 16:52:25 +0000
+Processing by ProjectsController#index as JSON
+  Parameters: {"project"=>{}}
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"final_data_exports", "filter"=>{}, "sort"=>{"updated_at"=>-1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"classifications", "query"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"workflows", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "sort"=>{"order"=>1}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82c'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+Completed 200 OK in 75ms (Views: 65.3ms)
+
+
+Started GET "//current_user" for 72.46.12.80 at 2021-03-22 16:52:25 +0000
+Processing by UsersController#logged_in_user as */*
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+Completed 200 OK in 13ms (Views: 3.0ms)
+
+
+Started GET "//groups?project_id=6058c7e81d41c82455c9f829" for 72.46.12.80 at 2021-03-22 16:52:25 +0000
+Processing by GroupsController#index as JSON
+  Parameters: {"project_id"=>"6058c7e81d41c82455c9f829", "group"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"groups", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "limit"=>25, "skip"=>0, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 27ms (Views: 19.6ms)
+
+
+Started GET "/" for 63.162.127.71 at 2021-03-22 16:52:28 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+Completed 200 OK in 39ms (Views: 38.2ms)
+
+
+Started GET "//projects" for 63.162.127.71 at 2021-03-22 16:52:29 +0000
+Processing by ProjectsController#index as JSON
+  Parameters: {"project"=>{}}
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"final_data_exports", "filter"=>{}, "sort"=>{"updated_at"=>-1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"classifications", "query"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"workflows", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "sort"=>{"order"=>1}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82c'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+Completed 200 OK in 54ms (Views: 47.8ms)
+
+
+Started GET "//groups?project_id=6058c7e81d41c82455c9f829" for 63.162.127.71 at 2021-03-22 16:52:29 +0000
+Processing by GroupsController#index as JSON
+  Parameters: {"project_id"=>"6058c7e81d41c82455c9f829", "group"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"groups", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "limit"=>25, "skip"=>0, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 21ms (Views: 15.2ms)
+
+
+Started GET "//current_user" for 63.162.127.71 at 2021-03-22 16:52:29 +0000
+Processing by UsersController#logged_in_user as */*
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 1.3ms)
+
+
+Started GET "//subject_sets?limit=25&workflow_id=6058c7e81d41c82455c9f82c&random=true" for 63.162.127.71 at 2021-03-22 16:52:30 +0000
+Processing by SubjectSetsController#index as JSON
+  Parameters: {"limit"=>"25", "workflow_id"=>"6058c7e81d41c82455c9f82c", "random"=>"true", "subject_set"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82c.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.2735278624504759}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82c.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$lte"=>0.2735278624504759}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82c.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"subject_sets", "filter"=>{"counts.6058c7e81d41c82455c9f82c.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}}, "limit"=>25, "skip"=>0, "sort"=>{"random_no"=>-1}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15...
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82c.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 30ms (Views: 13.3ms)
+
+
+Started GET "/" for 72.46.12.80 at 2021-03-22 16:52:32 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Completed 200 OK in 17ms (Views: 16.0ms)
+
+
+Started GET "//groups?project_id=6058c7e81d41c82455c9f829" for 63.162.127.71 at 2021-03-22 16:52:34 +0000
+Processing by GroupsController#index as JSON
+  Parameters: {"project_id"=>"6058c7e81d41c82455c9f829", "group"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"groups", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "limit"=>25, "skip"=>0, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+Completed 200 OK in 22ms (Views: 15.3ms)
+
+
+Started GET "//subject_sets?limit=25&workflow_id=6058c7e81d41c82455c9f82a&random=true" for 63.162.127.71 at 2021-03-22 16:52:34 +0000
+Processing by SubjectSetsController#index as JSON
+  Parameters: {"limit"=>"25", "workflow_id"=>"6058c7e81d41c82455c9f82a", "random"=>"true", "subject_set"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.9602471046239708}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$lte"=>0.9602471046239708}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$lte"=>0.9602471046239708}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"subject_sets", "filter"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$lte"=>0.9602471046239708}}, "limit"=>25, "skip"=>0, "sort"=>{"random_no"=>-1}, "lsid"=>{"id"=><BSON::Bin...
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$lte"=>0.9602471046239708}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f883'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f877'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f838'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85e'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f87b'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f869'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f854'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f834'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f861'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f865'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f842'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f84e'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f867'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f852'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f850'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f891'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f889'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f83a'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f89d'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f88f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85a'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f885'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f899'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f87f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f84c'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 172ms (Views: 160.8ms)
+
+
+Started GET "//groups?project_id=6058c7e81d41c82455c9f829" for 63.162.127.71 at 2021-03-22 16:52:35 +0000
+Processing by GroupsController#index as JSON
+  Parameters: {"project_id"=>"6058c7e81d41c82455c9f829", "group"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"groups", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "limit"=>25, "skip"=>0, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 21ms (Views: 15.4ms)
+
+
+Started GET "//subject_sets?limit=25&workflow_id=6058c7e81d41c82455c9f82a&random=true" for 63.162.127.71 at 2021-03-22 16:52:37 +0000
+Processing by SubjectSetsController#index as JSON
+  Parameters: {"limit"=>"25", "workflow_id"=>"6058c7e81d41c82455c9f82a", "random"=>"true", "subject_set"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.017272525057407728}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.017272525057407728}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"subject_sets", "filter"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.017272525057407728}}, "limit"=>25, "skip"=>0, "sort"=>{"random_no"=>1}, "lsid"=>{"id"=><BSON::Bi...
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.017272525057407728}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85c'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f897'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f873'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f87d'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f88d'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f893'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f858'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f836'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f879'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f844'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f895'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f863'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f871'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f875'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86d'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f881'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f887'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f856'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f89b'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f83c'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86b'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f84c'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f87f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f899'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 181ms (Views: 172.3ms)
+
+
+Started GET "//subjects?subject_set_id=6058c7e81d41c82455c9f85c&page=1&limit=3&min_subject_order=0&type=root&status=active&workflow_id=6058c7e81d41c82455c9f82a" for 63.162.127.71 at 2021-03-22 16:52:38 +0000
+Processing by SubjectsController#index as JSON
+  Parameters: {"subject_set_id"=>"6058c7e81d41c82455c9f85c", "page"=>"1", "limit"=>"3", "min_subject_order"=>"0", "type"=>"root", "status"=>"active", "workflow_id"=>"6058c7e81d41c82455c9f82a", "subject"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85c'), "status"=>"active", "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.003s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"subjects", "filter"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85c'), "status"=>"active", "type"=>"root"}, "limit"=>3, "skip"=>0, "sort"=>{"order"=>1, "subject_set_id"=...
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85c'), "status"=>"active", "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"subjects", "filter"=>{"parent_subject_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85d'), "status"=>{"$in"=>["active", "retired"]}, "region"=>{"$ne"=>nil}}, "sort"=>{"order"=>1}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1...
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+Completed 200 OK in 43ms (Views: 26.9ms)
+
+
+Started GET "/" for 172.102.5.118 at 2021-03-22 16:52:44 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Completed 200 OK in 16ms (Views: 15.4ms)
+
+
+Started GET "/workflow-3/assets/jquery-ui.min.self-04ac8c63e6b43f6e8eecfb306e9b4a1e3faf784b824f5a28202d50a7978b3ab7.css?body=1" for 172.102.5.118 at 2021-03-22 16:52:46 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3/assets/jquery-ui.min.self-04ac8c63e6b43f6e8eecfb306e9b4a1e3faf784b824f5a28202d50a7978b3ab7.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.4ms)
+
+
+Started GET "/workflow-3/assets/application.self-f6331682007f5662e59b74c6bcec78c6af0d8a61866db4357e2bccfdc3a019d5.css?body=1" for 172.102.5.118 at 2021-03-22 16:52:46 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3/assets/application.self-f6331682007f5662e59b74c6bcec78c6af0d8a61866db4357e2bccfdc3a019d5.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.8ms)
+
+
+Started GET "/workflow-3/css/styles.css" for 172.102.5.118 at 2021-03-22 16:52:46 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3/css/styles.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.2ms)
+
+
+Started GET "/workflow-3/packs/js/application-1c3a5a0b1569baa5aab4.js" for 172.102.5.118 at 2021-03-22 16:52:46 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3/packs/js/application-1c3a5a0b1569baa5aab4.js"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.5ms)
+
+
+Started GET "/workflow-3/js/custom.js" for 172.102.5.118 at 2021-03-22 16:52:46 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3/js/custom.js"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.9ms)
+
+
+Started GET "/" for 63.162.127.71 at 2021-03-22 16:53:33 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Completed 200 OK in 17ms (Views: 15.8ms)
+
+
+Started GET "//projects" for 63.162.127.71 at 2021-03-22 16:53:33 +0000
+Processing by ProjectsController#index as JSON
+  Parameters: {"project"=>{}}
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"final_data_exports", "filter"=>{}, "sort"=>{"updated_at"=>-1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"classifications", "query"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"workflows", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "sort"=>{"order"=>1}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82c'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 55ms (Views: 48.4ms)
+
+
+Started GET "//current_user" for 63.162.127.71 at 2021-03-22 16:53:34 +0000
+Processing by UsersController#logged_in_user as */*
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 1.0ms)
+
+
+Started GET "//groups?project_id=6058c7e81d41c82455c9f829" for 63.162.127.71 at 2021-03-22 16:53:34 +0000
+Processing by GroupsController#index as JSON
+  Parameters: {"project_id"=>"6058c7e81d41c82455c9f829", "group"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"groups", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "limit"=>25, "skip"=>0, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 20ms (Views: 14.9ms)
+
+
+Started GET "/" for 63.162.127.71 at 2021-03-22 16:53:42 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+Completed 200 OK in 17ms (Views: 16.4ms)
+
+
+Started GET "/workflow-3/packs/js/application-1c3a5a0b1569baa5aab4.js" for 63.162.127.71 at 2021-03-22 16:53:42 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3/packs/js/application-1c3a5a0b1569baa5aab4.js"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.7ms)
+
+
+Started GET "/workflow-3/css/styles.css" for 63.162.127.71 at 2021-03-22 16:53:42 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3/css/styles.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.8ms)
+
+
+Started GET "/workflow-3/js/custom.js" for 63.162.127.71 at 2021-03-22 16:53:42 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3/js/custom.js"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.2ms)
+
+
+Started GET "/workflow-3" for 63.162.127.71 at 2021-03-22 16:53:49 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.9ms)
+
+
+Started GET "/" for 63.162.127.71 at 2021-03-22 16:53:51 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Completed 200 OK in 20ms (Views: 19.6ms)
+
+
+Started GET "/workflow-3/assets/jquery-ui.min.self-04ac8c63e6b43f6e8eecfb306e9b4a1e3faf784b824f5a28202d50a7978b3ab7.css?body=1" for 63.162.127.71 at 2021-03-22 16:53:51 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3/assets/jquery-ui.min.self-04ac8c63e6b43f6e8eecfb306e9b4a1e3faf784b824f5a28202d50a7978b3ab7.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.1ms)
+
+
+Started GET "/workflow-3/packs/js/application-1c3a5a0b1569baa5aab4.js" for 63.162.127.71 at 2021-03-22 16:53:52 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3/packs/js/application-1c3a5a0b1569baa5aab4.js"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.2ms)
+
+
+Started GET "/workflow-3/assets/application.self-f6331682007f5662e59b74c6bcec78c6af0d8a61866db4357e2bccfdc3a019d5.css?body=1" for 63.162.127.71 at 2021-03-22 16:53:52 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3/assets/application.self-f6331682007f5662e59b74c6bcec78c6af0d8a61866db4357e2bccfdc3a019d5.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.9ms)
+
+
+Started GET "/workflow-3/js/custom.js" for 63.162.127.71 at 2021-03-22 16:53:52 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3/js/custom.js"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.6ms)
+
+
+Started GET "/workflow-3/css/styles.css" for 63.162.127.71 at 2021-03-22 16:53:52 +0000
+
+ActionController::RoutingError (No route matches [GET] "/workflow-3/css/styles.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.6ms)
+
+
+Started GET "/" for 63.162.127.71 at 2021-03-22 16:53:55 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Completed 200 OK in 16ms (Views: 15.2ms)
+
+
+Started GET "//projects" for 63.162.127.71 at 2021-03-22 16:53:56 +0000
+Processing by ProjectsController#index as JSON
+  Parameters: {"project"=>{}}
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"final_data_exports", "filter"=>{}, "sort"=>{"updated_at"=>-1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"classifications", "query"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"workflows", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "sort"=>{"order"=>1}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82c'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 53ms (Views: 46.4ms)
+
+
+Started GET "//current_user" for 63.162.127.71 at 2021-03-22 16:53:57 +0000
+Processing by UsersController#logged_in_user as */*
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+Completed 200 OK in 9ms (Views: 1.3ms)
+
+
+Started GET "//groups?project_id=6058c7e81d41c82455c9f829" for 63.162.127.71 at 2021-03-22 16:53:57 +0000
+Processing by GroupsController#index as JSON
+  Parameters: {"project_id"=>"6058c7e81d41c82455c9f829", "group"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"groups", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "limit"=>25, "skip"=>0, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 19ms (Views: 14.0ms)
+
+
+Started GET "//subject_sets?limit=25&workflow_id=6058c7e81d41c82455c9f82a&random=true" for 63.162.127.71 at 2021-03-22 16:53:57 +0000
+Processing by SubjectSetsController#index as JSON
+  Parameters: {"limit"=>"25", "workflow_id"=>"6058c7e81d41c82455c9f82a", "random"=>"true", "subject_set"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.4679386000148662}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.4679386000148662}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"subject_sets", "filter"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.4679386000148662}}, "limit"=>25, "skip"=>0, "sort"=>{"random_no"=>1}, "lsid"=>{"id"=><BSON::Bina...
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.4679386000148662}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86d'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f881'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f887'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f856'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f89b'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f83c'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86b'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f84c'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f87f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f899'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f885'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85a'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f88f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f89d'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f83a'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f889'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f891'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f850'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f852'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f867'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f84e'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f842'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f865'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f861'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f834'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 180ms (Views: 172.2ms)
+
+
+Started GET "//groups?project_id=6058c7e81d41c82455c9f829" for 63.162.127.71 at 2021-03-22 16:53:57 +0000
+Processing by GroupsController#index as JSON
+  Parameters: {"project_id"=>"6058c7e81d41c82455c9f829", "group"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"groups", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "limit"=>25, "skip"=>0, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 20ms (Views: 14.5ms)
+
+
+Started GET "//subject_sets?limit=25&workflow_id=6058c7e81d41c82455c9f82a&random=true" for 63.162.127.71 at 2021-03-22 16:53:59 +0000
+Processing by SubjectSetsController#index as JSON
+  Parameters: {"limit"=>"25", "workflow_id"=>"6058c7e81d41c82455c9f82a", "random"=>"true", "subject_set"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.3557880039321857}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.3557880039321857}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"subject_sets", "filter"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.3557880039321857}}, "limit"=>25, "skip"=>0, "sort"=>{"random_no"=>1}, "lsid"=>{"id"=><BSON::Bina...
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.3557880039321857}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f863'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f871'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f875'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86d'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f881'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f887'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f856'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f89b'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f83c'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86b'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f84c'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f87f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f899'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f885'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85a'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f88f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f89d'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f83a'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f889'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f891'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f850'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f852'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f867'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f84e'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 177ms (Views: 169.1ms)
+
+
+Started GET "//subjects?subject_set_id=6058c7e81d41c82455c9f86f&page=1&limit=3&min_subject_order=0&type=root&status=active&workflow_id=6058c7e81d41c82455c9f82a" for 63.162.127.71 at 2021-03-22 16:53:59 +0000
+Processing by SubjectsController#index as JSON
+  Parameters: {"subject_set_id"=>"6058c7e81d41c82455c9f86f", "page"=>"1", "limit"=>"3", "min_subject_order"=>"0", "type"=>"root", "status"=>"active", "workflow_id"=>"6058c7e81d41c82455c9f82a", "subject"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86f'), "status"=>"active", "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"subjects", "filter"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86f'), "status"=>"active", "type"=>"root"}, "limit"=>3, "skip"=>0, "sort"=>{"order"=>1, "subject_set_id"=...
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86f'), "status"=>"active", "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"subjects", "filter"=>{"parent_subject_id"=>BSON::ObjectId('6058c7e81d41c82455c9f870'), "status"=>{"$in"=>["active", "retired"]}, "region"=>{"$ne"=>nil}}, "sort"=>{"order"=>1}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1...
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+Completed 200 OK in 30ms (Views: 23.1ms)
+
+
+Started GET "/" for 63.162.127.71 at 2021-03-22 16:54:42 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Completed 200 OK in 16ms (Views: 15.7ms)
+
+
+Started GET "//projects" for 63.162.127.71 at 2021-03-22 16:54:43 +0000
+Processing by ProjectsController#index as JSON
+  Parameters: {"project"=>{}}
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"final_data_exports", "filter"=>{}, "sort"=>{"updated_at"=>-1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"classifications", "query"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"workflows", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "sort"=>{"order"=>1}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82c'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+Completed 200 OK in 60ms (Views: 53.8ms)
+
+
+Started GET "//current_user" for 63.162.127.71 at 2021-03-22 16:54:43 +0000
+Processing by UsersController#logged_in_user as */*
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.003s
+Completed 200 OK in 10ms (Views: 1.7ms)
+
+
+Started GET "//subject_sets?limit=25&workflow_id=6058c7e81d41c82455c9f82a&random=true" for 63.162.127.71 at 2021-03-22 16:54:43 +0000
+Processing by SubjectSetsController#index as JSON
+  Parameters: {"limit"=>"25", "workflow_id"=>"6058c7e81d41c82455c9f82a", "random"=>"true", "subject_set"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.36447211995676587}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa53359...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.36447211995676587}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa53359...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"subject_sets", "filter"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.36447211995676587}}, "limit"=>25, "skip"=>0, "sort"=>{"random_no"=>1}, "lsid"=>{"id"=><BSON::Bin...
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.36447211995676587}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa53359...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f863'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f871'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f875'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86d'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f881'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f887'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f856'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f89b'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.005s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f83c'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86b'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f84c'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f87f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f899'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f885'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85a'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f88f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f89d'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f83a'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f889'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f891'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f850'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f852'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f867'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f84e'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 203ms (Views: 193.2ms)
+
+
+Started GET "//groups?project_id=6058c7e81d41c82455c9f829" for 63.162.127.71 at 2021-03-22 16:54:44 +0000
+Processing by GroupsController#index as JSON
+  Parameters: {"project_id"=>"6058c7e81d41c82455c9f829", "group"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"groups", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "limit"=>25, "skip"=>0, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f833'), "meta_data.hide"=>{"$ne"=>"1"}}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46920...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f833'), "meta_data.hide"=>{"$ne"=>"1"}, "status"=>"active"}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=><...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f833'), "meta_data.hide"=>{"$ne"=>"1"}, "status"=>"inactive"}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.update | STARTED | {"update"=>"groups", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('6058c7e81d41c82455c9f833')}, "u"=>{"$set"=>{"calculated_stats_at"=>2021-03-22 16:54:4...
+MONGODB | localhost:27023 | loop_dev.update | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f860'), "meta_data.hide"=>{"$ne"=>"1"}}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46920...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f860'), "meta_data.hide"=>{"$ne"=>"1"}, "status"=>"active"}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=><...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f860'), "meta_data.hide"=>{"$ne"=>"1"}, "status"=>"inactive"}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.update | STARTED | {"update"=>"groups", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('6058c7e81d41c82455c9f860')}, "u"=>{"$set"=>{"calculated_stats_at"=>2021-03-22 16:54:4...
+MONGODB | localhost:27023 | loop_dev.update | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 80ms (Views: 74.0ms)
+
+
+Started GET "//subject_sets?limit=25&workflow_id=6058c7e81d41c82455c9f82a&random=true" for 63.162.127.71 at 2021-03-22 16:54:45 +0000
+Processing by SubjectSetsController#index as JSON
+  Parameters: {"limit"=>"25", "workflow_id"=>"6058c7e81d41c82455c9f82a", "random"=>"true", "subject_set"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$gte"=>0.8992880708907512}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$lte"=>0.8992880708907512}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$lte"=>0.8992880708907512}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"subject_sets", "filter"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$lte"=>0.8992880708907512}}, "limit"=>25, "skip"=>0, "sort"=>{"random_no"=>-1}, "lsid"=>{"id"=><BSON::Bin...
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subject_sets", "query"=>{"counts.6058c7e81d41c82455c9f82a.active_subjects"=>{"$gt"=>0}, "meta_data.hide"=>{"$ne"=>"1"}, "random_no"=>{"$lte"=>0.8992880708907512}}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa533594...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85e'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f87b'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f869'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f854'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f834'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f861'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f865'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f842'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f84e'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f867'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f852'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f850'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f891'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f889'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f83a'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f89d'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f88f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85a'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f885'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f899'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f87f'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f84c'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f86b'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f83c'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"subject_set_id"=>BSON::ObjectId('6058c7e91d41c82455c9f89b'), "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1b15aa5335945bc...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 202ms (Views: 190.3ms)
+
+
+Started GET "//subjects?subject_set_id=6058c7e81d41c82455c9f85e&page=1&limit=3&min_subject_order=0&type=root&status=active&workflow_id=6058c7e81d41c82455c9f82a" for 63.162.127.71 at 2021-03-22 16:54:45 +0000
+Processing by SubjectsController#index as JSON
+  Parameters: {"subject_set_id"=>"6058c7e81d41c82455c9f85e", "page"=>"1", "limit"=>"3", "min_subject_order"=>"0", "type"=>"root", "status"=>"active", "workflow_id"=>"6058c7e81d41c82455c9f82a", "subject"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85e'), "status"=>"active", "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"subjects", "filter"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85e'), "status"=>"active", "type"=>"root"}, "limit"=>3, "skip"=>0, "sort"=>{"order"=>1, "subject_set_id"=...
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "subject_set_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85e'), "status"=>"active", "type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=...
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"subjects", "filter"=>{"parent_subject_id"=>BSON::ObjectId('6058c7e81d41c82455c9f85f'), "status"=>{"$in"=>["active", "retired"]}, "region"=>{"$ne"=>nil}}, "sort"=>{"order"=>1}, "lsid"=>{"id"=><BSON::Binary:0x46920499453820 type=uuid data=0xd1...
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+Completed 200 OK in 30ms (Views: 22.9ms)

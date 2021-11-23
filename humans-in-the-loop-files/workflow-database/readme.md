@@ -1,0 +1,2 @@
+# Workflow Database
+Entity-relationship diagram, data dictionary, initialization schema, and database backup of project outputs for the workflow database tracking data sources, machine learning processes, crowdsourcing tasks, outputs of both, and training data. For instructions on initializing a PostgreSQL database from scratch, see the machine-learning-scripts folder of this repository.  

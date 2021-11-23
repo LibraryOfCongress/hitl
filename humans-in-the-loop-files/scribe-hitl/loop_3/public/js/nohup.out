@@ -1,0 +1,709 @@
+Deprecation warning: Expected string default value for '--jbuilder'; got true (boolean).
+This will be rejected in the future unless you explicitly pass the options `check_default_type: false` or call `allow_incompatible_default_type!` in your code
+You can silence deprecations warning by setting the environment variable THOR_SILENCE_DEPRECATION.
+Deprecation warning: Expected string default value for '--serializer'; got true (boolean).
+This will be rejected in the future unless you explicitly pass the options `check_default_type: false` or call `allow_incompatible_default_type!` in your code
+You can silence deprecations warning by setting the environment variable THOR_SILENCE_DEPRECATION.
+=> Booting Puma
+=> Rails 4.2.11.3 application starting in development on http://0.0.0.0:3002
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Init: OAUTH providers: []
+D, [2021-03-22T16:40:25.892317 #9481] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyOpening topology=Unknown>
+D, [2021-03-22T16:40:25.892395 #9481] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2021-03-22T16:40:25.892767 #9481] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerOpening address=localhost:27023 topology=Unknown>
+D, [2021-03-22T16:40:25.892795 #9481] DEBUG -- : MONGODB | Server localhost:27023 initializing.
+D, [2021-03-22T16:40:25.895385 #9481] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Unknown new=Single>
+D, [2021-03-22T16:40:25.895430 #9481] DEBUG -- : MONGODB | Topology type 'unknown' changed to type 'single'.
+D, [2021-03-22T16:40:25.895470 #9481] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::ServerDescriptionChanged>
+D, [2021-03-22T16:40:25.895604 #9481] DEBUG -- : MONGODB | Server description for localhost:27023 changed from 'unknown' to 'standalone'.
+D, [2021-03-22T16:40:25.895660 #9481] DEBUG -- : MONGODB | EVENT: #<Mongo::Monitoring::Event::TopologyChanged prev=Single new=Single>
+D, [2021-03-22T16:40:25.895684 #9481] DEBUG -- : MONGODB | There was a change in the members of the 'single' topology.
+D, [2021-03-22T16:40:25.897302 #9481] DEBUG -- : MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+D, [2021-03-22T16:40:25.898985 #9481] DEBUG -- : MONGODB | localhost:27023 | admin.saslStart | STARTED | {}
+D, [2021-03-22T16:40:25.900938 #9481] DEBUG -- : MONGODB | localhost:27023 | admin.saslStart | SUCCEEDED | 0.002s
+D, [2021-03-22T16:40:25.904791 #9481] DEBUG -- : MONGODB | localhost:27023 | admin.saslContinue | STARTED | {}
+D, [2021-03-22T16:40:25.905225 #9481] DEBUG -- : MONGODB | localhost:27023 | admin.saslContinue | SUCCEEDED | 0.000s
+D, [2021-03-22T16:40:25.905345 #9481] DEBUG -- : MONGODB | localhost:27023 | admin.saslContinue | STARTED | {}
+D, [2021-03-22T16:40:25.907116 #9481] DEBUG -- : MONGODB | localhost:27023 | admin.saslContinue | SUCCEEDED | 0.002s
+D, [2021-03-22T16:40:25.908397 #9481] DEBUG -- : MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.011s
+D, [2021-03-22T16:40:25.909682 #9481] DEBUG -- : MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+D, [2021-03-22T16:40:25.911276 #9481] DEBUG -- : MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Routing static assets from ./project/yellow-pages-3/assets
+Puma starting in single mode...
+* Version 3.12.6 (ruby 2.2.10-p489), codename: Llamas in Pajamas
+* Min threads: 0, max threads: 16
+* Environment: development
+* Listening on tcp://0.0.0.0:3002
+Use Ctrl-C to stop
+
+
+Started GET "/" for 63.162.127.71 at 2021-03-22 16:40:42 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+WARNING: We noticed you're using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`'s `dependencies` section. If it doesn't, you need to run one of the following commands:
+
+  npm install --save core-js@2    npm install --save core-js@3
+  yarn add core-js@2              yarn add core-js@3
+
+
+Hash: 5c4c137cda5a99c143ca
+Version: webpack 4.44.2
+Time: 29118ms
+Built at: 03/22/2021 4:41:16 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/admin-770bfc43985349c6b068.js   1.21 MiB        admin  [emitted] [immutable]  admin
+      js/admin-770bfc43985349c6b068.js.map   1.25 MiB        admin  [emitted] [dev]        admin
+    js/application-ae84c411356183e5e361.js   4.42 MiB  application  [emitted] [immutable]  application
+js/application-ae84c411356183e5e361.js.map   3.84 MiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint admin = js/admin-770bfc43985349c6b068.js js/admin-770bfc43985349c6b068.js.map
+Entrypoint application = js/application-ae84c411356183e5e361.js js/application-ae84c411356183e5e361.js.map
+[./app/assets/javascripts/admin/all.js] 47 bytes {admin} [built]
+[./app/assets/javascripts/admin/stats.js] 17.1 KiB {admin} [built]
+[./app/assets/javascripts/application.js] 265 bytes {application} [built]
+[./app/assets/javascripts/lib/api.jsx] 1.59 KiB {application} [built]
+[./app/assets/javascripts/lib/csrf.js] 115 bytes {admin} {application} [built]
+[./app/assets/javascripts/lib/d3.min.js] 238 KiB {admin} [built]
+[./app/assets/javascripts/lib/jquery.extensions.js] 573 bytes {application} [built]
+[./app/assets/javascripts/lib/marked.min.js] 20.4 KiB {application} [built]
+[./app/assets/javascripts/lib/modernizr-custom.js] 6.96 KiB {application} [built]
+[./app/assets/javascripts/lib/moment.min.js] 47.2 KiB {application} [built]
+[./app/assets/javascripts/lib/proto.js] 328 bytes {application} [built]
+[./app/assets/javascripts/models/project.js] 1.66 KiB {application} [built]
+[./app/javascript/packs/admin.js] 164 bytes {admin} [built]
+[./app/javascript/packs/application.js] 638 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+    + 1066 hidden modules
+
+WARNING in ./app/assets/javascripts/lib/moment.min.js
+Module not found: Error: Can't resolve './locale' in '/home/ubuntu/humans_in_the_loop/loop_3/app/assets/javascripts/lib'
+ @ ./app/assets/javascripts/lib/moment.min.js
+ @ ./app/assets/javascripts/application.js
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 33881ms (Views: 33865.8ms)
+
+
+Started GET "//jquery-ui.min.self-04ac8c63e6b43f6e8eecfb306e9b4a1e3faf784b824f5a28202d50a7978b3ab7.css?body=1" for 63.162.127.71 at 2021-03-22 16:41:16 +0000
+
+ActionController::RoutingError (No route matches [GET] "/jquery-ui.min.self-04ac8c63e6b43f6e8eecfb306e9b4a1e3faf784b824f5a28202d50a7978b3ab7.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.8ms)
+
+
+Started GET "//application.self-f6331682007f5662e59b74c6bcec78c6af0d8a61866db4357e2bccfdc3a019d5.css?body=1" for 63.162.127.71 at 2021-03-22 16:41:16 +0000
+
+ActionController::RoutingError (No route matches [GET] "/application.self-f6331682007f5662e59b74c6bcec78c6af0d8a61866db4357e2bccfdc3a019d5.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.4ms)
+
+
+Started GET "//projects" for 63.162.127.71 at 2021-03-22 16:41:17 +0000
+Processing by ProjectsController#index as JSON
+  Parameters: {"project"=>{}}
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"final_data_exports", "filter"=>{}, "sort"=>{"updated_at"=>-1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"classifications", "query"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"workflows", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "sort"=>{"order"=>1}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+Overwriting existing field help in class WorkflowTask.
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.003s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82c'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 140ms (Views: 124.2ms)
+
+
+Started GET "//groups?project_id=6058c7e81d41c82455c9f829" for 63.162.127.71 at 2021-03-22 16:41:18 +0000
+Processing by GroupsController#index as JSON
+  Parameters: {"project_id"=>"6058c7e81d41c82455c9f829", "group"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"groups", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "limit"=>25, "skip"=>0, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f833'), "meta_data.hide"=>{"$ne"=>"1"}}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46981...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f833'), "meta_data.hide"=>{"$ne"=>"1"}, "status"=>"active"}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=><...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f833'), "meta_data.hide"=>{"$ne"=>"1"}, "status"=>"inactive"}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.update | STARTED | {"update"=>"groups", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('6058c7e81d41c82455c9f833')}, "u"=>{"$set"=>{"stats"=>{"total_finished"=>0, "total_pen...
+MONGODB | localhost:27023 | loop_dev.update | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f860'), "meta_data.hide"=>{"$ne"=>"1"}}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46981...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f860'), "meta_data.hide"=>{"$ne"=>"1"}, "status"=>"active"}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=><...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.aggregate | STARTED | {"aggregate"=>"subjects", "pipeline"=>[{"$match"=>{"group_id"=>BSON::ObjectId('6058c7e81d41c82455c9f860'), "meta_data.hide"=>{"$ne"=>"1"}, "status"=>"inactive"}}, {"$group"=>{"_id"=>"$workflow_id", "count"=>{"$sum"=>1}}}], "cursor"=>{}, "lsid"=>{"id"=...
+MONGODB | localhost:27023 | loop_dev.aggregate | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.update | STARTED | {"update"=>"groups", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('6058c7e81d41c82455c9f860')}, "u"=>{"$set"=>{"stats"=>{"total_finished"=>0, "total_pen...
+MONGODB | localhost:27023 | loop_dev.update | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 98ms (Views: 84.7ms)
+
+
+Started GET "/" for 3.89.83.110 at 2021-03-22 16:41:27 +0000
+Processing by HomeController#index as */*
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Completed 200 OK in 18ms (Views: 17.8ms)
+
+
+Started GET "/" for 72.46.12.80 at 2021-03-22 16:41:32 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Completed 200 OK in 16ms (Views: 15.0ms)
+
+
+Started GET "//application.self-f6331682007f5662e59b74c6bcec78c6af0d8a61866db4357e2bccfdc3a019d5.css?body=1" for 72.46.12.80 at 2021-03-22 16:41:33 +0000
+
+ActionController::RoutingError (No route matches [GET] "/application.self-f6331682007f5662e59b74c6bcec78c6af0d8a61866db4357e2bccfdc3a019d5.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.3ms)
+
+
+Started GET "//jquery-ui.min.self-04ac8c63e6b43f6e8eecfb306e9b4a1e3faf784b824f5a28202d50a7978b3ab7.css?body=1" for 72.46.12.80 at 2021-03-22 16:41:33 +0000
+
+ActionController::RoutingError (No route matches [GET] "/jquery-ui.min.self-04ac8c63e6b43f6e8eecfb306e9b4a1e3faf784b824f5a28202d50a7978b3ab7.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.3ms)
+
+
+Started GET "//projects" for 72.46.12.80 at 2021-03-22 16:41:34 +0000
+Processing by ProjectsController#index as JSON
+  Parameters: {"project"=>{}}
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"final_data_exports", "filter"=>{}, "sort"=>{"updated_at"=>-1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"classifications", "query"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"workflows", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "sort"=>{"order"=>1}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82c'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 56ms (Views: 49.6ms)
+
+
+Started GET "//groups?project_id=6058c7e81d41c82455c9f829" for 72.46.12.80 at 2021-03-22 16:41:34 +0000
+Processing by GroupsController#index as JSON
+  Parameters: {"project_id"=>"6058c7e81d41c82455c9f829", "group"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"groups", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "limit"=>25, "skip"=>0, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+Completed 200 OK in 23ms (Views: 16.9ms)
+
+
+Started GET "/" for 72.46.12.80 at 2021-03-22 16:41:49 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+Completed 200 OK in 20ms (Views: 19.5ms)
+
+
+Started GET "//application.self-f6331682007f5662e59b74c6bcec78c6af0d8a61866db4357e2bccfdc3a019d5.css?body=1" for 72.46.12.80 at 2021-03-22 16:41:49 +0000
+
+ActionController::RoutingError (No route matches [GET] "/application.self-f6331682007f5662e59b74c6bcec78c6af0d8a61866db4357e2bccfdc3a019d5.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.1ms)
+
+
+Started GET "//jquery-ui.min.self-04ac8c63e6b43f6e8eecfb306e9b4a1e3faf784b824f5a28202d50a7978b3ab7.css?body=1" for 72.46.12.80 at 2021-03-22 16:41:49 +0000
+
+ActionController::RoutingError (No route matches [GET] "/jquery-ui.min.self-04ac8c63e6b43f6e8eecfb306e9b4a1e3faf784b824f5a28202d50a7978b3ab7.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.4ms)
+
+
+Started GET "//projects" for 72.46.12.80 at 2021-03-22 16:41:50 +0000
+Processing by ProjectsController#index as JSON
+  Parameters: {"project"=>{}}
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"final_data_exports", "filter"=>{}, "sort"=>{"updated_at"=>-1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"classifications", "query"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"workflows", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "sort"=>{"order"=>1}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82c'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 59ms (Views: 51.7ms)
+
+
+Started GET "//groups?project_id=6058c7e81d41c82455c9f829" for 72.46.12.80 at 2021-03-22 16:41:50 +0000
+Processing by GroupsController#index as JSON
+  Parameters: {"project_id"=>"6058c7e81d41c82455c9f829", "group"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"groups", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "limit"=>25, "skip"=>0, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 23ms (Views: 16.3ms)
+
+
+Started GET "/" for 72.46.12.80 at 2021-03-22 16:41:58 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+Completed 200 OK in 20ms (Views: 18.8ms)
+
+
+Started GET "//jquery-ui.min.self-04ac8c63e6b43f6e8eecfb306e9b4a1e3faf784b824f5a28202d50a7978b3ab7.css?body=1" for 72.46.12.80 at 2021-03-22 16:41:58 +0000
+
+ActionController::RoutingError (No route matches [GET] "/jquery-ui.min.self-04ac8c63e6b43f6e8eecfb306e9b4a1e3faf784b824f5a28202d50a7978b3ab7.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.8ms)
+
+
+Started GET "//application.self-f6331682007f5662e59b74c6bcec78c6af0d8a61866db4357e2bccfdc3a019d5.css?body=1" for 72.46.12.80 at 2021-03-22 16:41:59 +0000
+
+ActionController::RoutingError (No route matches [GET] "/application.self-f6331682007f5662e59b74c6bcec78c6af0d8a61866db4357e2bccfdc3a019d5.css"):
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.11.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.11.3) lib/action_dispatch/middleware/static.rb:120:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+  rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.11.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.3) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+  puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+  puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+  puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `call'
+  puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.10/gems/actionpack-4.2.11.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (83.2ms)
+
+
+Started GET "//projects" for 72.46.12.80 at 2021-03-22 16:42:00 +0000
+Processing by ProjectsController#index as JSON
+  Parameters: {"project"=>{}}
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"projects", "filter"=>{"status"=>"active"}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"final_data_exports", "filter"=>{}, "sort"=>{"updated_at"=>-1}, "limit"=>1, "singleBatch"=>true, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"classifications", "query"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"type"=>"root"}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"workflows", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "sort"=>{"order"=>1}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82a'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"subjects", "query"=>{"workflow_id"=>BSON::ObjectId('6058c7e81d41c82455c9f82c'), "status"=>"active"}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+Completed 200 OK in 54ms (Views: 46.3ms)
+
+
+Started GET "//groups?project_id=6058c7e81d41c82455c9f829" for 72.46.12.80 at 2021-03-22 16:42:00 +0000
+Processing by GroupsController#index as JSON
+  Parameters: {"project_id"=>"6058c7e81d41c82455c9f829", "group"=>{}}
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.001s
+MONGODB | localhost:27023 | loop_dev.find | STARTED | {"find"=>"groups", "filter"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "limit"=>25, "skip"=>0, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27023 | loop_dev.count | STARTED | {"count"=>"groups", "query"=>{"project_id"=>BSON::ObjectId('6058c7e81d41c82455c9f829')}, "lsid"=>{"id"=><BSON::Binary:0x46981039631480 type=uuid data=0xb8600eda9f6d44a3...>}}
+MONGODB | localhost:27023 | loop_dev.count | SUCCEEDED | 0.002s
+Completed 200 OK in 22ms (Views: 16.6ms)

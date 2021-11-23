@@ -1,0 +1,32 @@
+<h1>Data</h1>
+
+<% if @export.nil? %>
+  <p>No data exports have yet been built.</p>
+  <p>Please run `rake project:build_and_export_final_data` first</p>
+
+<% else %>
+  <p>Most recent data export:
+
+  <dl>
+    <dt>Items</dt>
+    <dd><%= @export.num_final_subject_sets %></dd>
+
+    <dt>Built</dt>
+    <dd><%= @export.updated_at.strftime('%B %-d, %Y') %>
+
+  </dl>
+
+  <a href="<%= @export.path %>">Download</a>
+
+  <h2>Make Public?</h2>
+
+  <p>Should the public be able to download the latest from <a href="/data/latest" target="_blank">/data/latest</a> and subscribe to the <a href="/data.atom" target="_blank">data updates ATOM feed</a>?</p>
+  
+  <form method="post">
+    <%= check_box 'project', "downloadable_data" %>
+    <%= label 'project','downloadable_data', 'Allow the public to download data' %>
+
+    <p><input type="submit" value="Save" /></p>
+  </form>
+
+<% end %>

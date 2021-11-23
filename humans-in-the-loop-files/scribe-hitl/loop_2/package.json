@@ -1,0 +1,59 @@
+{
+  "name": "scribeAPI",
+  "version": "0.1.0",
+  "devDependencies": {
+    "babelify": "^8.0.0",
+    "jest": "^24.8.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^15.6.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.7.1"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-stage-0": "^7.0.0",
+    "@rails/webpacker": "^4.0.7",
+    "babel-jest": "^24.8.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "classnames": "^2.2.6",
+    "core-js": "3",
+    "create-react-class": "^15.6.3",
+    "historical-dates": "0.2.2",
+    "historical-dates-ui": "0.1.7",
+    "jquery": "^3.5.0",
+    "jquery-ui-dist": "^1.12.1",
+    "json-api-client": "^0.4.4",
+    "normalize.css": "^3.0.3",
+    "pluralize": "^7.0.0",
+    "prop-types": "^15.7.2",
+    "query-string": "^5.1.1",
+    "react": "^15.6.2",
+    "react-app-polyfill": "^1.0.1",
+    "react-dom": "^15.6.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "rxjs": "^6.3.3",
+    "webpack": "^4.8.3",
+    "webpack-merge": "^4.1.4"
+  },
+  "scripts": {
+    "build": "./bin/webpack",
+    "dev": "./bin/webpack-dev-server",
+    "test": "NODE_ENV=test jest --no-cache"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "testRegex": "(/app/assets/javascripts/__tests__/.*|\\.(test|spec))\\.(js|json|jsx|node)$"
+  }
+}

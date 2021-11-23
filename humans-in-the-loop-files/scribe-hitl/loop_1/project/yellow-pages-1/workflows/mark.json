@@ -1,0 +1,34 @@
+{
+  "name":"mark",
+  "label":"Mark Workflow",
+  "subject_fetch_limit":"1000",
+  "generates_subjects_after": 1,
+  "generates_subjects": true,
+  "generates_subjects_for": null,
+
+  "first_task":"yp1_mark_segments",
+
+  "tasks": {
+    "yp1_mark_segments": {
+      "tool": "pickOneMarkOne",
+      "instruction": "Pick the type of segment, advertisement, business grouping, or telephone tip, then draw a box around the segment.\n\nYour efforts will help us test the accuracy of a machine learning process doing the same task.",
+      "generates_subjects": true,
+      "help": {
+        "file": "mark_segments"
+      },
+      "tool_config" : {
+        "displays_transcribe_button": false,
+        "options": [
+          {"type": "rectangleTool", "label": "Advertisement", "color": "red", "stroke_width": 10, "generates_subject_type": "yp1_advertisement", "help": {"file": "m_advertisement"}},
+          {"type": "rectangleTool", "label": "Business Grouping", "color": "blue", "stroke_width": 10, "generates_subject_type": "yp1_business_block", "help":  {"file": "m_business_block"}},
+          {"type": "rectangleTool", "label": "Telephone Tip", "color": "darkorange", "stroke_width": 10, "generates_subject_type": "yp1_informational", "help": {"file": "m_informational"}}
+        ]
+      }
+    },
+    "completion_assessment_task": {
+      "tool_config": {
+        "displays_transcribe_button": false
+      }
+    }
+  }
+}

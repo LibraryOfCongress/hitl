@@ -1,0 +1,22 @@
+<div id="admin-header">
+
+  <ul class="account-tabs">
+    <li>Hi, <%= link_to "#{current_user.name} (#{current_user.role.capitalize})", "/#user" %> <%= link_to "Sign out", "/#/sign_out" %></li>
+  </ul>
+
+  <ul class="header-tabs">
+  <li><%= link_to "Home", "/#" %></li>
+  <% { 
+
+      "Dashboard" => admin_dashboard_path,
+      "Subject Sets" => admin_subject_sets_path,
+      "Users" => admin_users_path,
+      "Data" => admin_data_path
+
+    }.each do |(label, path)| 
+      active = request.original_url.include?(path)
+  %>
+    <li><%= link_to label, path, class: (active ? 'active' : '') %></li>
+  <% end %>
+  </ul>
+</div>

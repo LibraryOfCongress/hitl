@@ -1,0 +1,32 @@
+[
+  {
+    "subject": {
+      "parent_id": "53f26a6c45626f6d54080000",
+      "location": "https://zooniverse-static.s3.amazonaws.com/scribe_subjects/logbookofalfredg1851unse_0083.jpg",
+      "meta_data": null,
+       "annotations": [
+        {
+          "key": 0,
+          "y_upper": 458,
+          "y_lower": 763,
+          "x": 976.4459319230002,
+          "y": 610.5
+        },
+        {
+          "key": 1,
+          "y_upper": 1743.6507936507937,
+          "y_lower": 2099.69696969697,
+          "x": 817.9322166197094,
+          "y": 1921.6738816738819
+        },
+        {
+          "key": 2,
+          "y_upper": 2046.0461760461767,
+          "y_lower": 2431.3564213564214,
+          "x": 781.352128472796,
+          "y": 2238.701298701299
+        }
+      ]
+    }
+  }
+]

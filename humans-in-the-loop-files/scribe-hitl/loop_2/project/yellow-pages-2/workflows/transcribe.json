@@ -1,0 +1,38 @@
+{
+  "name": "transcribe",
+  "label": "Transcribe Workflow",
+  "subject_fetch_limit":"1000",
+  "generates_subjects": true,
+  "generates_subjects_for": null,
+  "generates_subjects_after": 3,
+  "generates_subjects_max": 100,
+  "generates_subjects_method": "collect-unique",
+  "first_task": "yp3_business_type",
+  "tasks": {
+    "yp3_business_type": {
+      "tool": "compositeTool",
+      "instruction": "Enter the business type. If the business type references another type, transcribe it below.\n\nYour efforts will help us improve the OCR (optical character recognition) process doing this same task.",
+      "tool_config": {
+        "tools": {
+          "yp3_business_type_main": {
+            "tool": "textTool",
+            "tool_config": {},
+            "examples": ["Floor Machines"],
+            "help": {
+              "file": "t3_business_type"
+            },
+            "generates_subject_type": "yp3_transcribed_business_type"
+          },
+          "yp3_business_type_reference": {
+            "tool": "textTool",
+            "examples": ["See Ladies' Wear"],
+            "generates_subject_type": "yp3_transcribed_business_type_reference",
+            "help": {
+              "file": "t3_business_address"
+            }
+          }
+        }
+      }
+    }
+  }
+}

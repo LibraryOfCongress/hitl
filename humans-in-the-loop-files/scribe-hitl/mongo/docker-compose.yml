@@ -1,0 +1,48 @@
+version: '3'
+services:
+        # yellow-pages-1
+        mongodb_1:
+                image: 'mongo:4.0-xenial'
+                container_name: 'mongodb_dev_1'
+                environment:
+                        - MONGO_INITDB_DATABASE=loop_dev
+                        - MONGO_INITDB_ROOT_USERNAME=loop_dev
+                        - MONGO_INITDB_ROOT_PASSWORD=loop_dev
+                volumes:
+                        - ./init-mongo-1.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+                        - ./appdata_1:/data/db
+                ports:
+                        - '27017-27019:27017-27019'
+
+        # yellow-pages-2
+        mongodb_2:
+                image: 'mongo:4.0-xenial'
+                container_name: 'mongodb_dev_2'
+                environment:
+                        - MONGO_INITDB_DATABASE=loop_dev
+                        - MONGO_INITDB_ROOT_USERNAME=loop_dev
+                        - MONGO_INITDB_ROOT_PASSWORD=loop_dev
+                volumes:
+                        - ./init-mongo-2.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+                        - ./appdata_2:/data/db
+                ports:
+                        - '27020-27022:27017-27019'
+
+        # yellow-pages-3
+        mongodb_3:
+                image: 'mongo:4.0-xenial'
+                container_name: 'mongodb_dev_3'
+                environment:
+                        - MONGO_INITDB_DATABASE=loop_dev
+                        - MONGO_INITDB_ROOT_USERNAME=loop_dev
+                        - MONGO_INITDB_ROOT_PASSWORD=loop_dev
+                volumes:
+                        - ./init-mongo-3.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+                        - ./appdata_3:/data/db
+                ports:
+                        - '27023-27025:27017-27019'
+
+volumes:
+        appdata_1:
+        appdata_2:
+        appdata_3:

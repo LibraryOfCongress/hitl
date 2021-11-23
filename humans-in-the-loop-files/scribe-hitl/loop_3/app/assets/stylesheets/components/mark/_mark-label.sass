@@ -1,0 +1,18 @@
+.mark-label
+  text-anchor: middle
+  stroke: black
+  stroke-width: 1px
+  fill: white
+  user-select: none
+  transition: opacity 0.5s
+
+  &:hover,
+  .rectangle-tool:hover &
+    opacity: 0.2
+
+.dragging .mark-label
+  display: none
+
+.transcribe .mark-label,
+.verify .mark-label
+  display: none

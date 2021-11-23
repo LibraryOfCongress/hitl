@@ -1,0 +1,5 @@
+archive
+**/node_modules/
+**/appdata_*
+**/tmp/
+**/hitl.config

@@ -1,0 +1,54 @@
+<div class="core-data">
+  <h1>
+    <% if current_user.admin? && @user.avatar %>
+      <img src="<%= @user.avatar %>" />
+    <% end %>
+    <%= admin_obf @user.to_s %>
+  </h1>
+
+  <dl>
+
+    <dt>Provider</dt>
+    <dd><% if @user.guest %>(Guest)<% else %><%= @user.provider %><% end %></dd>
+
+    <dt>Status</dt>
+    <dd><%= @user.status %></dd>
+    
+    <dt>Email</dt>
+    <dd><%= admin_obf @user.email %></dd>
+ 
+    <dt>Profile URL</dt>
+    <dd>
+      <% if current_user.admin? %>
+        <a href="<%= @user.profile_url %>" target="_blank"><%= @user.profile_url %></a>
+      <% else %>
+        <%= admin_obf @user.profile_url %>
+      <% end %>
+    </dd>
+
+    <dt>Role</dt>
+    <dd><%= @user.role %></dd>
+
+    <dt>Sign Ins</dt>
+    <dd><%= @user.sign_in_count %>. Last sign-in: <%= @user.last_sign_in_at %></dd>
+
+  </dl>
+</div>
+
+<div class="supplied-data">
+  <h2>Related</h2>
+
+  <% if @user.classifications.count > 0 %>
+    
+    <h3>Classifications</h3>
+
+    <ol>
+    <% @user.classifications.limit(100).each do |c| %>
+      <li><%= link_to "#{c} (#{time_ago_in_words(c.finished_at)} ago)", admin_classification_path(c) %></li>
+    <% end %>
+    </ol>
+
+  <% end %>
+
+</div>
+
