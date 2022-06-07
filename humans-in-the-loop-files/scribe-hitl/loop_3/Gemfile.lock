@@ -119,7 +119,7 @@ GEM
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
-    jmespath (1.4.0)
+    jmespath (1.6.1)
     jwt (1.4.1)
     kaminari (1.2.1)
       activesupport (>= 4.1.0)
