@@ -1,5 +1,5 @@
 opencv-python==4.4.0.42
-numpy==1.17.2
+numpy==1.22.0
 pytesseract==0.3.7
 python-crfsuite==0.9.7
 spacy==2.2.2
