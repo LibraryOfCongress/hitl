@@ -294,7 +294,7 @@ GEM
     tilt (2.0.10)
     turbolinks (2.5.3)
       coffee-rails
-    tzinfo (1.2.8)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     warden (1.2.7)
       rack (>= 1.0)
