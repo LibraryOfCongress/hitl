@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "devDependencies": {
     "babelify": "^8.0.0",
-    "jest": "^24.8.0",
+    "jest": "^29.6.1",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^15.6.2",
     "webpack-cli": "^3.3.2",
@@ -20,7 +20,7 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-stage-0": "^7.0.0",
-    "@rails/webpacker": "^4.0.7",
+    "@rails/webpacker": "^5.4.4",
     "babel-jest": "^24.8.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "classnames": "^2.2.6",
