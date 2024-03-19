@@ -150,7 +150,7 @@ GEM
       mini_mime (>= 0.1.1)
     mime-types (2.99.3)
     mini_mime (1.0.2)
-    mini_portile2 (2.4.0)
+    mini_portile2 (2.6.1)
     minitest (5.14.2)
     mongo (2.6.2)
       bson (>= 4.3.0, < 5.0.0)
@@ -175,8 +175,10 @@ GEM
       moped
       newrelic_rpm (~> 3.11)
     newrelic_rpm (3.13.2.302)
-    nokogiri (1.9.1)
-      mini_portile2 (~> 2.4.0)
+    nio4r (2.3.1)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
     oauth2 (1.0.0)
       faraday (>= 0.8, < 0.10)
       jwt (~> 1.0)
@@ -199,9 +201,11 @@ GEM
     omniauth-zooniverse (0.0.3)
     origin (2.3.1)
     orm_adapter (0.5.0)
-    puma (3.12.6)
+    puma (5.6.8)
+      nio4r (~> 2.0)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
+    racc (1.7.3)
     rack (1.6.13)
     rack-cors (1.0.6)
       rack (>= 1.6.0)
@@ -342,7 +346,7 @@ DEPENDENCIES
   omniauth-facebook
   omniauth-google-oauth2
   omniauth-zooniverse (~> 0.0.3)
-  puma (~> 3.12.6)
+  puma (~> 5.6.8)
   quiet_assets
   rack-cors
   rack-streaming-proxy (~> 2.0.1)
